@@ -1,4 +1,4 @@
-apiVersion: {{ .Values.apiVersion }}
-description: {{ .Values.description }}
-name: {{ .Values.name }}
-version: {{ .Values.version }}
+# apiVersion: {{ .Values.apiVersion }}
+# description: {{ .Values.description }}
+# name: {{ .Values.name }}
+# version: {{ .Values.version }}
