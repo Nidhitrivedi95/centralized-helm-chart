@@ -1,4 +1,4 @@
-# apiVersion: {{ .Values.apiVersion }}
-# description: {{ .Values.description }}
-# name: {{ .Values.name }}
-# version: {{ .Values.version }}
+apiVersion: v1
+description: A Helm chart for Kubernetes
+name: template-service
+version: 0.1.0
