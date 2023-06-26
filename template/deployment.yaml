@@ -4,7 +4,7 @@ metadata:
   name: {{ template "app.fullname" . }}
   labels:
     app: {{ template "app.name" . }}
-    chart: {{ .Values.name }}-{{ .Values.version | replace "+" "_" }}
+    chart: {{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
   namespace: {{ .Values.namespace }}
@@ -17,7 +17,7 @@ spec:
         release: {{ .Release.Name }}
     spec:
       containers:
-        - name: {{ .Values.name }}
+        - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
